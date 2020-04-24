@@ -11,43 +11,76 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+
+    <style type="text/css">
+        .preloader {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           z-index: 9999;
+           background-image: url('loader.gif');
+           background-repeat: no-repeat; 
+           background-color: #FFF;
+           background-position: center;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.preloader').fadeOut('slow');
+            $(".mode").addClass("animated bounceInDown slow");
+            console.log("load")
+        })
+    </script>
 </head>
 <body>
     <div class="preloader">
-
     </div>
     <div class="main-content">
-        <div class="navbar">
-            <div class="container">
-                <h1>Blogspot</h1>
-            </div>
+        <div class="blogs">
+            BLOGS
         </div>
-        <div class="container">
+        <div class="container main">
             <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="row">
-                        <div class="upper">
-                            <div class="tiles col-sm-12 col-md-12">
-                                Hello A
+                <div class="col-sm-12 col-md-4">
+                    <a href="post.html">
+                        <div class="tiles">
+                            <div class="styleit stylish-white">
+                                <h3>Devarsh Panchal</h3>
                             </div>
+                            <img class="img-responsive" src="https://1.bp.blogspot.com/-SCYjKEUe0U4/V61y3u45RoI/AAAAAAAAL3U/rRVay4lEmzwlaoIrZkX7GbfaDDnPk2tUwCLcB/s1600/notanitboy%2Bswiss%2Bfashion%2Bblogger%2Bblog%2Bmode%2Bhomme%2Bgay%2Bstyle%2Bmen%2Bstreetstyle%2B11.jpg">
                         </div>
-                        <div class="lower">
-                            <div class="tiles col-sm-12 col-md-6">
-                                Hello B
-                            </div>
-                            <div class="tiles col-sm-12 col-md-6">
-                                Hello C
-                            </div>
+                    </a>
+                    <div class="tiles">
+                        <div class="styleit stylish-white">
+                            <h3>Devarsh Panchal</h3>
                         </div>
+                        <img class="img-responsive" src="https://i.pinimg.com/originals/9b/f0/da/9bf0da866c904f05358fd9ae26d7b219.jpg">
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
-                    Hello 2
+                <div class="col-sm-12 col-md-4">
+                    <div class="tiles">
+                        <div class="styleit stylish-white">
+                            <h3>Devarsh Panchal</h3>
+                        </div>
+                        <img class="img-responsive" src="https://i.pinimg.com/originals/9b/f0/da/9bf0da866c904f05358fd9ae26d7b219.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="tiles">
+                        <div class="styleit stylish-white">
+                            <h3>Devarsh Panchal</h3>
+                        </div>
+                        <img class="img-responsive" src="https://i.pinimg.com/originals/9b/f0/da/9bf0da866c904f05358fd9ae26d7b219.jpg">
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,13 +89,14 @@
                 <h4>Made with <span style="color: #ff3900;">❤️</span> Devarsh Panchal</h4>
             </div>
         </div>
-        <button class="mode" onclick="myFunction()"><i class="change fas fa-moon"></i></button>
+        <button class="mode" onclick="darkMode()"><i class="change fas fa-moon"></i></button>
 
         <script>
-            function myFunction() {
+            function darkMode() {
                 var element = document.body;
                 element.classList.toggle("dark-theme");
                 $(".change").toggleClass("fa-sun").toggleClass("fa-moon"); 
+                $(".styleit").toggleClass("stylish-dark").toggleClass("stylish-white"); 
             }
         </script>
     </div>

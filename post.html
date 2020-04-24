@@ -17,11 +17,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+
+    <style type="text/css">
+        body {
+            overflow: hidden;
+        }
+    </style>
+
 </head>
 <body>
     <div class="header">
         <div class="logo">
-            Logo
+           
         </div>
         <div class="handles">
             <i class="animated fadeInLeft slow change fas fa-moon"></i>
@@ -71,10 +78,10 @@
             </div>
         </div>
     </div>
-    <button class="mode" onclick="myFunction()"><i class="change fas fa-moon"></i></button>
+    <button class="animated bounceInDown slow mode" onclick="darkMode()"><i class="change fas fa-moon"></i></button>
 
     <script>
-        function myFunction() {
+        function darkMode() {
             var element = document.body;
             element.classList.toggle("dark-theme");
             $(".change").toggleClass("fa-sun").toggleClass("fa-moon");
