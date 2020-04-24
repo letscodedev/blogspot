@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -21,17 +22,49 @@
 
     </div>
     <div class="main-content">
-        <div class="jumbotron navbar">
-
-        </div>
-        <div class="container">
-            <h1>Blogspot</h1>
-        </div>
-        <div class="jumbotron footer">
-            <div class="footer-data">
-                Made with ❤️ Devarsh Panchal
+        <div class="navbar">
+            <div class="container">
+                <h1>Blogspot</h1>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="row">
+                        <div class="upper">
+                            <div class="tiles col-sm-12 col-md-12">
+                                Hello A
+                            </div>
+                        </div>
+                        <div class="lower">
+                            <div class="tiles col-sm-12 col-md-6">
+                                Hello B
+                            </div>
+                            <div class="tiles col-sm-12 col-md-6">
+                                Hello C
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    Hello 2
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-data">
+                <h4>Made with <span style="color: #ff3900;">❤️</span> Devarsh Panchal</h4>
+            </div>
+        </div>
+        <button class="mode" onclick="myFunction()"><i class="change fas fa-moon"></i></button>
+
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-theme");
+                $(".change").toggleClass("fa-sun").toggleClass("fa-moon"); 
+            }
+        </script>
     </div>
 </body>
 </html>
