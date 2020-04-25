@@ -69,6 +69,26 @@ body {
 	margin: 1rem 0;
 }
 
+.stylish2-dark {
+	position: absolute;
+	top: 720px;
+	padding: 0 1rem;
+	background-color: #212121;
+	color: #ffffff;
+}
+
+.stylish2-white {
+	position: absolute;
+	top: 720px;
+	padding: 0 1rem;
+	background-color: #ffffff;
+	color: #212121;
+}
+
+.styleit2 h3 {
+	margin: 1rem 0;
+}
+
 .tiles {
 	border-radius: 15px;
 	/*border: 1px solid black;*/
@@ -77,6 +97,7 @@ body {
 }
 
 .footer {
+	width: 100%;
 	margin: 2rem 0;
 }
 
@@ -154,4 +175,59 @@ body {
 
 .yellow {
 	background-color: #ffc600;
+}
+
+.handles {
+	font-size: 3rem;
+}
+
+.handles i {
+	padding-right: 0.75rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  	background: #f1f1f1; 
+  	border-radius: 10px;
+  	margin:3px 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  	background: #888; 
+  	border-radius: 10px;	
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  	background: #555; 
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 576px) {
+	.handles {
+		font-size: 2rem;
+	}
+	.main {
+		margin-top: 10rem;
+	}
+
+	.blogs {
+		position: fixed;
+		top: 0;
+		right: 0;
+		line-height: 1;
+		font-size: 10rem;
+		color: #4d4d4d;
+		opacity: 0.5;
+		z-index: -1;
+		margin: 3rem 0.25rem 0 0;
+	}
 }

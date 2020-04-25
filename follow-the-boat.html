@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Follow the Boat | ft. Aayush Mehra</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--- CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+        </div>
+        <div class="handles">
+            <i class="animated fadeInLeft fab fa-facebook-f"></i>
+            <i class="animated fadeInLeft fab fa-twitter"></i>
+            <i class="animated fadeInLeft slow fab fa-google-plus-g"></i>
+            <i class="animated fadeInLeft slow fab fa-instagram"></i>
+            <i class="animated fadeInLeft slower fab fa-youtube"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <img class="animated fadeInLeft img-responsive" src="assets/aayush-inside.jpg">
+                <h1 style="font-weight: bolder;font-size: 8rem;" class="animated fadeInRight slow">Follow the <br>Boat</h1>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h1 style="font-weight: 600; font-size: 5rem; padding-bottom: 1rem;" class="animated fadeInRight">ft. Aayush Mehra</h1>
+                <h4 style="padding-bottom: 1rem;" class="animated fadeInRight">Devarsh Panchal</h4>
+                <div class="description" style="padding-bottom: 1rem;">
+                    <div class="date date-white margin-right animated fadeInUp slow">
+                        <div class="date-style">
+                            <p style="margin-bottom: 0;">Jan</p>
+                            <span style="font-size: 25px; font-weight: bold">22</span>
+                        </div>
+                    </div>
+                    <div class="likes margin-right animated fadeInUp slower">
+                        <i class="fa fa-heart"></i>&nbsp;&nbsp;25
+                    </div>
+                    <div class="comments animated fadeInUp slower">
+                        <i class="fa fa-share-alt"></i>&nbsp;&nbsp;02
+                    </div>
+                </div>
+                <div class="post-data animated fadeInUp delay-1s">
+                    <h4 style="font-weight: 600">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="animated bounceInDown slow mode" onclick="darkMode()"><i class="change fas fa-moon"></i></button>
+
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-theme");
+            $(".change").toggleClass("fa-sun").toggleClass("fa-moon");
+            $(".date").toggleClass("date-white").toggleClass("date-dark");
+        }
+    </script>
+</body>
+</html>
